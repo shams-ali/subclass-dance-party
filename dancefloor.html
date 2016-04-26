@@ -2,15 +2,23 @@
 <html>
   <head>
     <title>Object Dance Party</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" type="text/css" href="animate.css" />
     <script src="lib/jquery.js"></script>
     <script src="src/dancer.js"></script>
     <script src="src/blinkyDancer.js"></script>
+    <script src="src/animalDancer.js"></script>
+    <script src="src/catDancer.js"></script>
   </head>
   <body>
     <div class="topbar">
       <span class="title">object dance party</span>
-      <a href="#" class="addDancerButton" data-dancer-maker-function-name="makeBlinkyDancer">add a blinky dancer</a>    </div>
+      <a href="#" class="addDancerButton" data-dancer-maker-function-name="makeBlinkyDancer">add a blinky dancer</a>    
+      <a href="#" class="addDancerButton" data-dancer-maker-function-name="animalDancer">add a dog dancer</a>
+      <a href="#" class="addDancerButton" data-dancer-maker-function-name="catDancer">add a cat dancer</a>
+      <a href="#" class="lineUpButton" data-dancer-maker-function-name="lineUp">Line Up</a>
+    </div>
     <script src="src/init.js"></script>
   </body>
 </html>
