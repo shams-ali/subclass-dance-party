@@ -60,6 +60,7 @@ $(document).ready(function() {
         var windowWidth = $('body').width();
         var left = (i*100) + (windowWidth/window.dancers.length);
         window.dancers[i].setPosition(top,left);
+        //$(this).children('img').css('transition', 'top 5s');
       }
     }
   });

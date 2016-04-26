@@ -3,7 +3,7 @@ body, html{
 }
 body{
   margin: 0px;
-  background-image: url("images/animal.party.jpg"); /*no-repeat center center fixed*/
+  background: url("images/animal.party.jpg") no-repeat center center fixed;
     -webkit-background-size: cover; /* For WebKit*/
     -moz-background-size: cover;    /* Mozilla*/
     -o-background-size: cover;      /* Opera*/
@@ -68,5 +68,27 @@ body, a:link, a:visited, a:active{
 
 .lineUp{
   top: 50%;
+  -webkit-transition: top 2s;
+  transition: top 2s;
+  -webkit-transition: left 2s;
+  transition: left 2s;
+}
+.speaker{
+  position: relative;
+}
+.speaker1{
+  left: 26%;
+  width: 10%%;
+  top: 75%;
+}
+.speaker2{
+  left: 45.5%;
+  width: 10%%;
+  top: 90%;
 }
 
+.speaker3{
+  left: 65%;
+  width: 10%%;
+  top: 85%;
+}
