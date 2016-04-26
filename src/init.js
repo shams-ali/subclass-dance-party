@@ -29,21 +29,42 @@ $(document).ready(function() {
     );
     window.dancers.push(dancer);
     $('body').append(dancer.$node);
+
+    $('.animal').hover(function(){
+      $(this).children('img').addClass('flip');
+      //$('.animalBody').removeClass('infinite');
+    }, function(){
+      var $that = $(this);
+      setTimeout(function(){
+        $that.children('img').removeClass('flip');
+      }, 1000);
+      //$('.animalBody').addClass('infinite');
+    });
   });
 
   $('.lineUpButton').on('click',function(){
-    //for(var i =0; i < window.dancers.length; i++){
-    var mid = $('body').height()/2;
-    var width = 0;//$('body').width()/window.dancers.length;
-
-    $('.dancer').css('top', mid);
-    //for(var i = 0; i < window.dancers.length;i++){
-    //  $('.dancer').css('left', width);
-    //}
-    //console.log(window.dancers);
-    //$('.dancer').css('border', '5px solid red');
-    //$('.dancer').removeClass('absolutePositioning');
-
-    //$('.dancer').delay(1000).slideDown();
+    //var mid = $('body').height()/2;
+    //var width = 0;
+    if($('.dancer').hasClass('lineUp')){
+      $('.dancer').removeClass('lineUp');
+      for(var i = 0; i < window.dancers.length; i++){
+        var top = $("body").height() * Math.random();
+        var left = $("body").width() * Math.random();
+        window.dancers[i].setPosition(top,left);
+      }
+    }else{
+      //$('.dancer').css('top', '50%');
+      $('.dancer').addClass('lineUp');
+      for(var i = 0; i < window.dancers.length; i++){
+        var top = $('body').height()/2;
+        var windowWidth = $('body').width();
+        var left = (i*100) + (windowWidth/window.dancers.length);
+        window.dancers[i].setPosition(top,left);
+      }
+    }
   });
+  $('.clearButton').on('click',function(){
+    $('.dancer').remove();
+  });
+
 });
