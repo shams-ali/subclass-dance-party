@@ -6,21 +6,25 @@
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <link rel="stylesheet" type="text/css" href="animate.css" />
     <script src="lib/jquery.js"></script>
+    <script src="lib/jquery.gamequery-0.7.1.js"></script>
     <script src="src/dancer.js"></script>
     <script src="src/blinkyDancer.js"></script>
     <script src="src/animalDancer.js"></script>
     <script src="src/catDancer.js"></script>
+    <script src="src/createPlayer.js"></script>
   </head>
-  <body>
+  <body class='abuDabi'>
     <div class="topbar">
       <span class="title btnBar">Animal dance party</span>
       <a href="#" class="addDancerButton btnBar" data-dancer-maker-function-name="makeBlinkyDancer">Add Lights</a>    
       <a href="#" class="addDancerButton btnBar" data-dancer-maker-function-name="animalDancer">Add Dog</a>
       <a href="#" class="addDancerButton btnBar" data-dancer-maker-function-name="catDancer">Add Cat</a>
+      <a href="#" class="addDancerButton createPlayerBtn btnBar" data-dancer-maker-function-name="createPlayer">Add Mouse</a><!-- Should be player for later -->
       <a href="#" class="lineUpButton btnBar" data-dancer-maker-function-name="lineUp">Line Up</a>
       <a href="#" class="clearButton btnBar" data-dancer-maker-function-name="clearFloor">Clear Floor</a>
-      <audio controls>
-        <source src="audio/ab-AI.mp3" type="audio/mpeg">
+      <a href="#" class="danceFloor btnBar" data-dancer-maker-function-name="danceFloor">Dance Floor</a>
+      <audio controls autoplay>
+        <source src="audio/deadmau5-veldt.mp3" type="audio/mpeg">
         Your browser does not support the audio tag.
       </audio>
     </div>

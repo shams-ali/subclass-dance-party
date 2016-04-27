@@ -1,6 +1,5 @@
-var animalDancer = function(top,left,timeBetweenSteps, id){
-  id = id || 'uglyDog';
-  makeDancer.call(this, top, left, timeBetweenSteps, id);
+var animalDancer = function(top,left,timeBetweenSteps){
+  makeDancer.call(this, top, left, timeBetweenSteps);
   this.$node = $('<span class="animal animalDancer dancer absolutePositioning"><img class="uglyDogHead animalHead animated infinite bounce" src="images/uglyDog.png"><img class="uglyDogBod animalBody animated infinite rubberBand" src="images/dogbody1.png"></span>');
   this.timeBetweenSteps = timeBetweenSteps;
   this.step();

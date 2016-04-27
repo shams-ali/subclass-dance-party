@@ -1,7 +1,5 @@
 var catDancer = function(top,left,timeBetweenSteps){
-  //coolcat
-  var id = id || 'coolcat';
-  makeDancer.call(this, top, left, timeBetweenSteps, id);
+  makeDancer.call(this, top, left, timeBetweenSteps);
   this.$node = $('<span class="animal animalDancer dancer absolutePositioning"><img class="coolCatHead animalHead animated infinite wobble" src="images/coolcat.png"><img class="coolCatBod animalBody animated infinite tada" src="images/catbody1.png"></span>');
   this.timeBetweenSteps = timeBetweenSteps;
   this.step();

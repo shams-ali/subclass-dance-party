@@ -1,17 +1,39 @@
 body, html{
   height:100%;
+  max-width: 1400px
 }
 body{
   margin: 0px;
-  background: url("images/animal.party.jpg") no-repeat center center fixed;
-    -webkit-background-size: cover; /* For WebKit*/
-    -moz-background-size: cover;    /* Mozilla*/
-    -o-background-size: cover;      /* Opera*/
-    background-size: cover;         /* Generic*/
+        /* Generic*/
   font-size: 18px;
 }
 body, a:link, a:visited, a:active{
   color: lightblue;
+}
+
+.abuDabi{
+  background: url("images/animal.party.jpg") no-repeat center center fixed;
+      -webkit-background-size: cover; /* For WebKit*/
+    -moz-background-size: cover;    /* Mozilla*/
+    -o-background-size: cover;      /* Opera*/
+    background-size: cover;    
+  /* Generic*/
+}
+
+.nightClub{
+  background: url("images/nightclub.jpg") no-repeat center center fixed;
+        -webkit-background-size: cover; /* For WebKit*/
+    -moz-background-size: cover;    /* Mozilla*/
+    -o-background-size: cover;      /* Opera*/
+    background-size: cover;  
+}
+
+.house{
+  background: url("images/houseparty.jpg") no-repeat center center fixed;
+        -webkit-background-size: cover; /* For WebKit*/
+    -moz-background-size: cover;    /* Mozilla*/
+    -o-background-size: cover;      /* Opera*/
+    background-size: cover;  
 }
 
 /*
@@ -65,9 +87,21 @@ body, a:link, a:visited, a:active{
   padding-top: 10px;
   z-index: 998;
 }
+.playerHead{
+  padding-left: 40px;
+}
+.playerBod{
+  padding-top: 15px;
+}
 
 .lineUp{
   top: 50%;
+  /*-webkit-transition: top 2s;
+  transition: top 2s;
+  -webkit-transition: left 2s;
+  transition: left 2s;*/
+}
+.dancer{
   -webkit-transition: top 2s;
   transition: top 2s;
   -webkit-transition: left 2s;
